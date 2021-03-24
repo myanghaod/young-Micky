@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>使用 let 声明变量</h1>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+var  x = 10;
+// Here x is 10
+{  
+  let x = 2;
+  // Here x is 2
+  document.getElementById("demo").innerHTML = x;
+}
+// Here x is 10
+//document.getElementById("demo").innerHTML = x;
+</script>
+<script>
+var txt = '{"name":"Bill Gates", "age":62, "city":"Seattle"}'
+var obj = JSON.parse(txt);
+document.getElementById("demo1").innerHTML = obj.name + ", " + obj.age;
+</script>
+
+
+</body>/
+</html>
